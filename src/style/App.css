@@ -1,0 +1,85 @@
+:root {
+  --point-color: #fdba3b;
+  --background-color: #282828;
+  --deactive-color: #8a8a8a;
+  --active-color: #fafafa;
+  --black: #282828;
+  --white: #fafafa;
+}
+
+main {
+  width: calc(100% - 40px);
+  height: calc(100% - 40px);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--background-color, #282828);
+}
+
+header {
+  max-width: 85%;
+  width: 1069px;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .logo {
+  font-size: 45px;
+  font-weight: 600;
+  color: var(--pointer-color, #fdba3b);
+}
+
+header .btnDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  height: 70%;
+}
+
+header .btnDiv button {
+  width: 150px;
+  height: 100%;
+  border-radius: 45px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+header .btnDiv .downloadBtn {
+  background-color: var(--point-color, #fdba3b);
+  color: var(--white, #fff);
+}
+
+.result {
+  max-width: 60%;
+  width: 800px;
+  height: calc(100% - 150px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.result .image {
+  width: 100%;
+  height: 400px;
+}
+
+.result .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.menu {
+  max-width: 100%;
+  width: 800px;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
