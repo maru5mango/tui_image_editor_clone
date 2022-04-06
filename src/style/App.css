@@ -7,6 +7,15 @@
   --white: #fafafa;
 }
 
+button {
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  font-weight: 400;
+  border: none;
+  cursor: pointer;
+}
+
 main {
   width: calc(100% - 40px);
   height: calc(100% - 40px);
@@ -75,6 +84,24 @@ header .btnDiv .downloadBtn {
   object-fit: contain;
 }
 
+.result .subMenu {
+  width: 100%;
+  height: 240px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.result .subMenu li {
+  list-style: none;
+  width: 72px;
+  height: 72px;
+  border-radius: 16px;
+}
+
 .menu {
   max-width: 100%;
   width: 800px;
@@ -82,4 +109,24 @@ header .btnDiv .downloadBtn {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 10px;
+}
+
+.menu li {
+  list-style: none;
+  width: 54px;
+  height: 54px;
+  border-radius: 12px;
+  padding: 0;
+  margin: 0;
+}
+
+.menu button {
+  background-color: var(--black, #000);
+  color: var(--white, #fff);
+}
+
+.menu .selected {
+  background-color: var(--white, #fff);
+  color: var(--black, #000);
 }
